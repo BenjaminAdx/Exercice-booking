@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Nav bar */
+header {
+  background: #003580;
+  color: #fff;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header span {
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  padding-top: 5px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.flexnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+button {
+  height: 50px;
+  background: #003580;
+  border: none;
+}
+
+button:hover {
+  background-color: #44638d;
+  cursor: pointer;
+}
+
+.flexnav img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: solid 1px grey;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.flexnav a {
+  background-color: white;
+  border: solid 1px #44638d;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.flexnav a:hover {
+  background-color: #d4e6ff;
+}
+
+.flexnav a span {
+  color: #003580;
+}
+
+/* liens sous navbar */
+#linktop2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#linktop2 a {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#linktop2 a:hover {
+  background: #88baff;
+}
+
+/* contenu principal */
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#wrap {
+  width: calc(100vw - 25%);
+}
+
+h3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+h4 {
+  color: grey;
+}
+
+.offres {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offre1 {
+  width: 50%;
+  height: 300px;
+}
+
+.offre2 {
+  background-image: url(évadez.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 300px;
+}
+
+.linkmain {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.linkmain a {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.linkmain a:hover {
+  background: rgb(230, 230, 230);
+}
+
+.linkmain a span {
+  color: black;
+}
+
+/* Flex box 3 photos */
+
+.flexcity3 {
+  display: flex;
+  width: 100%;
+  gap: 5%;
+}
+
+.flexcity3 figure {
+  width: 0;
+  min-width: 30%;
+  object-fit: cover;
+}
+
+.flexcity3 figure img {
+  width: 0;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+/* Flex box 4 photos */
+
+.flexcity4 {
+  display: flex;
+  width: 100%;
+  gap: 2%;
+}
+
+.flexcity4 figure {
+  width: 0;
+  min-width: 23.5%;
+  object-fit: cover;
+}
+
+.flexcity4 figure img {
+  width: 0;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+/* Flex box 6 photos */
+
+.flexcity6 {
+  display: flex;
+  width: 100%;
+  gap: 2%;
+}
+
+.flexcity6 figure {
+  width: 0;
+  min-width: 15%;
+  object-fit: cover;
+}
+
+.flexcity6 figure img {
+  width: 0;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+/* Grid Villes françaises */
+.gridfr {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-areas:
+    "p l m n b a"
+    "p2 p2 p2 l2 l2 l2"
+    "m2 m2 li li t t";
+  gap: 15px;
+}
+
+.gridfr figure {
+  width: 0;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.gridfr figure img {
+  width: 0;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.Paris {
+  grid-area: p;
+}
+
+.Lyon {
+  grid-area: l;
+}
+
+.Marseille {
+  grid-area: m;
+}
+
+.Nice {
+  grid-area: n;
+}
+
+.Bordeaux {
+  grid-area: b;
+}
+
+.Annecy {
+  grid-area: a;
+}
+
+.Paris2 {
+  grid-area: p2;
+  background-image: url(Paris.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Lyon2 {
+  grid-area: l2;
+  background-image: url(Lyon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Marseille2 {
+  grid-area: m2;
+  background-image: url(Marseille.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Lille {
+  grid-area: li;
+  background-image: url(Nice.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Toulouse {
+  grid-area: t;
+  background-image: url(Annecy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Grid destinations étrangères */
+.gridworld {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.gridworld img {
+  width: 0;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.States {
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+
+.Suisse {
+  grid-row: 1/2;
+  grid-column: 3/5;
+}
+
+.Vietnam {
+  grid-row: 1/2;
+  grid-column: 5/7;
+}
+
+.Inde {
+  grid-row: 2/3;
+  grid-column: 1/4;
+}
+
+.Château {
+  grid-row: 2/3;
+  grid-column: 4/7;
+}
